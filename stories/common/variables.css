@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --primary_300: #BA68C8;
   --primary_50: #F3E5F5;
   --primary_600: #8E24AA;
@@ -19,10 +20,19 @@
   --success_600: #00ACC1;
   --white: #FFFFFF;
   --black: #000000;
+
+  /* Fonts */
   --body-12: 12px;
   --body-14: 14px;
   --body-16: 16px;
   --body-18: 18px;
   --h2: 32px;
   --h1: 40px;
+
+  /* Spacing */
+  --space: 8px;
+  --space2: 16px;
+  --space3: 24px;
+  --space4: 32px;
+  --space5: 40px;
 }

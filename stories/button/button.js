@@ -9,6 +9,7 @@ export const createButton = ({
   button.type = 'submit';
   button.role = 'button';
   button.innerHTML = label;
+  button.className = ['button', `button--${size}`, `button--${style}`].join(' ');
 
   return button;
 }

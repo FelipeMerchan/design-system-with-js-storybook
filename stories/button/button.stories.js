@@ -10,5 +10,6 @@ const Template = ({ label, ...args }) => {
 
 export const Default = Template.bind({})
 Default.args = {
-  label: 'Button'
+  label: 'Button',
+  style: 'filled',
 }
