@@ -7,9 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_e3b5fdb84cf5200"
   },
-  "author": "Felipe Merchan",
+  "author": {
+    "name": "Felipe Merchan"
+  },
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-a11y": "^7.6.3",
@@ -23,8 +26,11 @@
     "@storybook/test": "^7.6.0",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
+    "chromatic": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "storybook@1.0.0"
 }
