@@ -1,13 +1,14 @@
-import _ from './card';
+import { createCard } from './card';
 
 export default {
-  title: 'Design System/Atoms/Button',
+  title: 'Design System/Atoms/Card',
 }
 
-const Template = ({ ...args }) => _({ ...args })
+const Template = ({ ...args }) => createCard({ ...args })
 
 export const Default = Template.bind({});
 
 Default.args = {
-  
+  description: 'Description',
+  title: 'Title',
 }
