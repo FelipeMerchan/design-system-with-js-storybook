@@ -23,6 +23,11 @@ export default {
         type: 'radio',
       }
     },
+    /* Para capturar eventos en el tab Actions de Storybook: */
+    onClick: {
+      action: 'clicked',
+      description: 'Event',
+    }
   },
   /* Permiten modificar la UI de Storybook: */
   decorators: [(story) => {
@@ -33,6 +38,25 @@ export default {
     return decorator;
   }],
   parameters: {
+    actions: {
+      handles: ['mouseover'],
+    },
+    /* Podemos definir temas o backgrounds: */
+    backgrounds: {
+      default: 'default',
+      /* Con values definimos a nuestros temas: */
+      values: [
+        {
+          /* Podemos crear un tema definiendo cualquier nombre: */
+          name: 'blackfriday',
+          value: '#000000',
+        },
+        {
+          name: 'default',
+          value: '#FFFFFF',
+        }
+      ],
+    },
     /* Parameters nos permite crear una documentación: */
     docs: {
       page: null,
@@ -42,7 +66,7 @@ export default {
         del archivo que debe leer Storybook donde tenemos la documentación: */
         /* component: ButtonDocumentation, */
       },
-    }
+    },
   },
   tags: ['autodocs'],
   title: 'Design System/Atoms/Button',

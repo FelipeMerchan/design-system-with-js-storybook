@@ -2,6 +2,7 @@ import './button.css';
 
 export const createButton = ({
   label,
+  onClick,
   size = 'small',
   style = 'outlined',
 }) => {
@@ -9,6 +10,7 @@ export const createButton = ({
   button.type = 'submit';
   button.role = 'button';
   button.innerHTML = label;
+  button.addEventListener('click', onClick);
   button.className = ['button', `button--${size}`, `button--${style}`].join(' ');
 
   return button;
